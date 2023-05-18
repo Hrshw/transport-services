@@ -1,0 +1,163 @@
+
+.headr{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 50px 340px 12px 0;
+}
+
+.headr .headrspan{
+    color: #ff5d1b;
+    font-size: 4rem;
+}
+
+p {
+padding: 0;
+margin: 0;
+}
+* {
+box-sizing: border-box;
+}
+
+body {
+ font-family: 'Poor Story', cursive;
+ /* background-image: url("/images/gallery-bg.jpg"); */
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+ overflow-x: hidden;
+}
+
+/* nav{
+    margin-bottom: -80px !important;
+    width: 100vw !important;
+} */
+
+/* .nav-item .nav-link{
+    color: black !important;
+    font-weight: 700 !important;
+} */
+
+/* .contain {
+width: 100%;
+height: 100vh;
+} */
+
+.container__items {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+/* height: 100vh; */
+}
+.polaroid {
+margin: 30px;
+width: 400px;
+height: 450px;
+background-color: white;
+padding: 1rem;
+box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+.polaroid__content-image {
+height: 350px;
+width: 100%;
+overflow: hidden;
+}
+.polaroid__content-image > img {
+height: 100%;
+width: 100%;
+display: block;
+object-fit: cover;
+}
+/* .polaroid__content-caption {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+} */
+
+#cont {
+    /* position: absolute; */
+    /* margin: auto; */
+    /* width: 100vw;
+    height: 80pt; */
+    top: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    width: 100%;
+    display: inline-block;
+    color: #ff5d1b;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    user-select: none;
+}
+
+/* .content {
+    position: relative;
+  } */
+  
+  .headrCo{
+    margin-left: 180px;
+  }
+  .content h2 {
+    color: #fff;
+    font-size: 6rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #ff5d1b;
+  }
+  
+  .content h2:nth-child(2) {
+    color: #ff5d1b;
+    animation: animate 4s ease-in-out infinite;
+  }
+
+  .polaroid{
+    filter: blur(8px);
+  }
+
+  .polaroid:hover{
+    background-color: #ff5d1b;
+    filter: none;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }

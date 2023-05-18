@@ -1,0 +1,445 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@300&display=swap');
+  body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+ .collapsed{
+    background-color: #ff5d1b !important;
+}
+.navbar .container-fluid .navbar-toggler{
+    background-color: #e9ecef;
+}
+
+.carousel-inner img{
+    filter: brightness(0.3);
+}
+
+.carousel-caption h5{
+    font-size: 4.5rem;
+    font-weight: 800;
+    position: relative;
+}
+.carousel-caption .slidTextFirst{
+    color: #ff5d1b;
+    bottom: 0;
+    right: 45%;
+}
+.slidTextFirst::before{
+    content: " ";
+    margin-left: 100px;
+}
+
+.carousel-caption .slidTextSecond{
+    color: #ff5d1b;
+}
+
+.carousel-caption > div > li {
+    color: whitesmoke;
+    
+}
+
+.carousel-caption .serv{
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    font-size: 2.5rem;
+}
+.carousel-caption .serv li{
+    margin-top: 40px;
+}
+
+.carousel-caption .serv li:last-child{
+    margin-right: 40px;
+}
+.carousel li{
+    list-style-type:none ;
+}
+.carousel li:before {
+    /* Unicode bullet symbol */
+    content: '\2022 ';
+    /* Bullet color */
+    color: red;
+    padding-right: 0.5em;
+}
+
+.carousel-caption .servTwo{
+    position: relative;
+    gap: 50px;
+    top: 50px;
+    padding: 20px 0 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+.carousel-caption .slidTextThird{
+    color: whitesmoke;
+    font-size: 4rem;
+    font-weight: 200;
+}
+.carousel-caption .slidTextThird-p{
+    color: #ff5d1b;
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.carousel-caption {
+    top: 30%;
+}
+
+.navbar{
+    --mdb-navbar-padding-top: 0.5625rem;
+    --mdb-navbar-brand-img-margin-right: 0.25rem;
+    --mdb-navbar-box-shadow:none;
+    padding-top: var(--mdb-navbar-padding-top);
+    z-index: 4;
+    margin-top: -30px;
+    width: 80%;
+    /* padding: 25px;
+    margin: 15px; */
+    /* width: -webkit-fill-available; */
+}
+.nav-item a{
+    color: #e9ecef !important;
+    font-weight: 100 !important;
+    margin-left: 10px;
+}
+
+.logoImg{
+    width: 200px;
+    margin-top: 30px;
+}
+
+.nav-link{
+    transition: all 0.2s;
+    position: relative;
+}
+
+.nav-link:hover::after{
+    content: " ";
+    height: 2px;
+    width: 100%;
+    background-color: #ff5d1b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-item .active::after{
+    content: " ";
+    height: 2px;
+    width: 100%;
+    background-color: #ff5d1b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* .carousel-inner img{
+    height: 130vh;
+    width: 100vw;
+} */
+
+.cards{
+ z-index: 2;
+ /* margin-top: 100px; */
+ border: 2px solid red;
+ border-radius: 20px;
+}
+
+.cards h1{
+    color: #ff5d1b;
+}
+
+.cardsSection{
+    margin-top: 275px;
+    background-image: url("/images/pexels-pixabay-268976.jpg");
+}
+.cardsSection .backside .card{
+    padding: 10px;
+}
+
+.card-icon{
+    font-size: 80px;
+    margin: auto;
+    padding: 10px;
+}
+.card:hover{
+    background-color: transparent;
+    width: 105%;
+}
+.card:hover > .card-icon{
+    color: aliceblue;
+}
+.serviceContainer{
+    background: #ff5d1b;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.card span{
+    color:red;
+}
+
+.offers .card-icon{
+    color: #ff5d1b;
+    font-size: 44px;
+}
+
+.offers span{
+    color: #ff5d1b;
+    font-size: 3rem;
+}
+
+h2,h3,h1{
+    font-size: 2.3rem;
+}
+
+
+/* service page */
+.nav li a{
+    color: #e9ecef !important;
+    text-transform: uppercase !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+#Section1,
+#Section2,
+#Section3,
+#Section4,
+#Section5,
+#Section6,
+#Section7,
+#Section8,
+#section9,
+#Section10,
+#Section11,
+#Section12
+p
+{
+    font-size: 1rem;
+}
+.sectionHeading{
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+.sectionHeading span{
+    color: #ff5d1b;
+}
+
+
+
+@media screen and (min-width: 576px){ 
+    .dropdown:hover > .dropdown-menu{
+        display: block;
+        margin-top: 0;
+        background-color: rgb(219, 34, 34);
+    }
+    .serviceSection{
+        display: flex;
+    }
+
+}
+
+/* @media screen and (max-width:1108px) {
+ 
+} */
+
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+    .carousel-inner img{
+        height: 130vh;
+        width: 100vw;
+    }
+    .cards{
+        margin-top: 190px;
+       }
+  }
+   
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    nav{
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+    .carousel-caption .serv{
+        position: relative;
+        left: 50%;
+        bottom: 20%;
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption h5{
+        font-size: 2.5rem;
+    }
+
+    .carousel-caption .servTwo{
+        gap: 20px;
+        margin-left: -5rem;
+        font-size: 1.3rem;
+    }
+
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cards{
+        margin-top: 190px;
+       }   
+       .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }
+   
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }
+   
+  /* For Mobile Landscape View */
+  @media screen and (max-device-width: 640px)
+  and (orientation: landscape) {
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }
+   
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }
+   
+  /* For iPhone 4 Portrait or Landscape View */
+  @media screen and (min-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }
+   
+  /* For iPhone 5 Portrait or Landscape View */
+  @media (device-height: 568px) and (device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }
+   
+  /* For iPhone 6 and 6 plus Portrait or Landscape View */
+  @media (min-device-height: 667px) and (min-device-width: 375px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+    }
+    .serviceSection{
+        display: block;
+    }
+    .scroll{
+        
+            height: 80%;
+            overflow-y: scroll;
+        
+    }
+    .scrollParnt{
+        height: 490px;
+        margin-bottom: 30px;
+    }
+  }

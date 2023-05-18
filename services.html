@@ -1,0 +1,669 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntermMover's Services</title>
+
+    <link rel="stylesheet" href="css files/bootstrap.min.css">
+    <link rel="stylesheet" href="css files/style.css">
+      <!-- jquery -->
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script> -->
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+
+    <div class="header row-cols-md-1 position-relative container">
+
+        <nav class="navbar navbar-expand-lg navbar-light w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logoImg" src="imagebox/logo-interm.png" alt=""></a>
+            <button class="navbar-toggler text-white collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="toggler"><i class="fa-solid fa-grip-lines text-dark"></i></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About Company</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Our Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="services.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Our Clients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="enquiryform.html">Online Enquiry Form</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+<section class="serviceSection">
+    <div class="d-flex flex-column flex-shrink-0 p-3" style="background-color: #ff5d1b;">
+        <a href="services.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs-1 fw-bolder">services</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li>
+            <a href="#" onclick="show('Section1');" class="navLink nav-link active">
+              Packers Movers Services
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section2');" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              Dmestic & International Services
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section3');" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Shipping Services
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section4');" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              Household Shifting Service
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section5')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              Relocation Service
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section6')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Cargo Services
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section7')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Insurance Service
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section8')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Packing Unpacking Service
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section9')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Warehouse Storage Service
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section10')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Care Carriers Movers Services
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section11')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Loading & Unloading Services
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="show('Section12')" class="navLink nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Transport Services
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="scroll">
+      <div id="Section1">
+        <div class="packerMoversServices">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Packers and Movers <span>Service</span></h1>
+              <h4>We make packing and moving less difficult for you with our pleasant services and team of workers</h4>
+              <p>We offer our clients with exceptional packing and shifting services. Our team gives you with first-class form of offerings with ideal packing that are not too clean and are a tedious project, it isn't clean to make a strong packing and circulate it to every other location. We assist you getting your stuff packed and flow it competently in your desired vicinity. We additionally let you know approximately extra valuable understanding approximately many extra steady packers and movers companies with a purpose to provide you with quality and secure moving services. Our Packers and Movers services provide you with offerings like wrapping, packing, tapping and boxing.</p>
+              <p>
+                Loading of all styles of items and services is a very bold and unstable work to do as it includes people's cash, bags and accept as true with upon us. loose handling or careless handling of products can also cause harm to some loss, that is the reason people locate it maximum handy to address over this venture to a specific dependable packers and movers organization. We provide our customers and customers a scientific and prepared loading after which unloading in their items inside the specific condition they desired for. We make certain of time allotted, expenses and the state of the products to build our clients consider in us.
+              </p>
+              <p>
+                we've skilled staffs that do the satisfactory job of loading and arranging your items with most care and entire interest. Our process does no longer get over only whilst we acquire, % and pass the goods but it remains our sole obligation until and except our moved items reaches your favored destination, is unloaded via the group of workers, then unpacked and is introduced inside the actual situation you had ordered for. Packing and transferring services is the most expert task to be performed with utmost attention as people depend upon us to prevent the final moment harm or another kind of trouble.
+              </p>
+              <p>
+                we have our branches in nearly all towns that makes your paintings simpler and handy even if you get past due in delivering your goods or packing. we have provide you with high-quality transportation centers with an increasing number of process opportunities. We take entire obligation of packing your true in the maximum presentable and safe way without making you feel worried or tired or growing unnecessary troubles for you in maximum reasonable fees. Our organisation specializes in all sorts of packing and moving offerings that consist of all form of business equipment's, household goods and different office or party goods. you could contact us on our to be had quantity for all sorts of queries and questions and take most suitable advantage of our super client oriented offerings.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section2" style="display: none;">
+        <div class="domesticIntern">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Domestic and International <span>Service</span></h1>
+              <h4>We make packing and moving less difficult for you with our pleasant services and team of workers</h4>
+
+              <p>Interm Packers and Movers area well-known logistics service provider for packing and shifting of household stuff, office furniture and equipment, car transportation, industrial goods and so on. We are known packers and movers in domestic as well as in international markets. Total customer satisfaction is our main aim. Interm Packers and Moversis a leader in the relocation industry of India and serves its customers country wide. Interm Packers and Movers is an independent relocation management specialization in all types of transportation with facilities for warehousing and storage.</p>
+
+              <p>
+                Interm Packers and Movers are a well-known name in the packing and moving industry. Since the time of its inception,it has strived to serve as many customers as possible with total satisfaction & has earned repeat orders.We have ample experience and we are total reliable company. Our skilled and expert employees as well as reasonable pricing have made us the best service providers in India.Either the move is local, long distance,or across the country, we acquire all the expertise with knowledge, awareness and experience to handle the situations .So we can serve our clients by taking off all the burden of moving. We plan your moves in a way that can move just anything you offer with utmost security and protection, effectiveness and within time and money constraints. Successful shifting demands a lot of sensitivity as well as personal attention and our workers are well trained to handle all the demands related to shifting.
+              </p>
+
+              <p>
+                We always ensure that your shipment is routed to its final destination proficiently and cost effectively. Every shipment is a complete individualized experience.We take full responsibility of shifting your goods. Ourrepresentatives are always there by your side starting from the packing to unloading of the stuff. Backed by a core team of thorough professionals, who are specialists in the field of packing and moving services, we ensure that your goods reach the destination with supreme care and safety.
+              </p>
+              <p>
+                Interm Packers and Movers have equal expertise in international relocation as well local and domestic relocation. We have successfully handled several international shifting and relocations. We offer economical and stress free international relocating services all over the country. In case of international shifting we offer sea and air cargo services. International quality packing material such as bubble wrap and stretch film is used to cover the household items so that they sit securely together and don't jump and bump around in transportation, resulting in damage. The covering also keeps out moisture,wetness and dust, which may be harmful for electronic items like TVs, Music Systems & Computers, etc.We also offer secure and reliable international shifting services, and our professionals take responsibility of your stuff and take charge of the customer clearance needs as well as carry out the freight formalities to ensure easy transit. So, if you are looking for an international packing and moving service provider in India we are here just for you to help you on international moves so that you are not hassled by relocation.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section3" style="display: none;">
+        <div class="shippingServices">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Shipping <span>Service</span></h1>
+              <p>Relocation to a exclusive location is a very time consuming activity and involves traumatic and demanding schedule of packing and transferring the products from one region to the opposite. Interm Packers and Movers provide our expert services for complete transferring method, proper from packing, transferring and settling down thereby saving your precious time and electricity. further to this, we additionally have warehousing storage services.
+              </p>
+
+              <p>In recent times, the gap in houses and workplaces is lowering and then again the expenses of the real estate enterprise are shooting up. As a result, people are putting their stuff in warehouses and downsizing it. the principle motive in the back of this may be inadequate space, reconstruction or renovating hobby as well as because of safety reasons. The stuff that can't be accommodated or adjusted in smaller space or the products that one does not require on the present day time can now be correctly saved at our warehouses with greater protection.
+            </p>
+
+              <p>
+                These kinds of reasons have made the warehousing facility extra crucial. Our warehousing centers are super are specially designed to be flexible. Our warehouses can deal with storing a single pellet of small electronics to heavy industrial gadget that require hundreds of square toes of space. We provide best answer for all your quick-term storage desires. if you are planning to outgrow your warehouse as well as require some additional area, we've got enough area to house your stuff. we can offer you increased storage area as your necessities grow. You want to pay best for the warehousing as well as storage offerings.
+              </p>
+
+              <p>
+                Our warehousing and storage offerings offer you area to shop workplace stuff which include furnishings, computer systems and documents etc.; household stuff along with greater fixtures, antiques, musical device, digital system and innumerable stuff.
+              </p>
+              <p>
+                We offer our services to corporate commercial customers and to people as nicely. as soon as your stuff reaches our warehouse, all of the duty of your stuff is with us until the time your stuff is saved here.
+              </p>
+
+              <p>
+                The principle features of our warehousing and garage facilities are shipping of your precious items as in step with wishes, transport and choose up well timed as in step with the wishes of patron, price effective, easy and brief distribution of the goods. we've got experienced and professional personnel and we make sure spherical the clock safety with superior stock management techniques.
+
+              </p>
+
+              <p>
+                We also lay a whole lot of emphasis on taking good care of your stuff and to keep away from any damage to your stuff we've got good enough pest manipulate measures. We additionally have special storage systems which can be particular for each customer’s valuable goods. We even handle big inventories providing you entire strategy to all your storage needs.
+              </p>
+
+              <p>
+                Both your pass is inside the town or long distance, we've professionals with sound knowledge as well as top experience to manipulate and cope with the situations. We serve our clients through taking off all their issues and burden of storing their stuff. At Interm Packers your stuff may be stored with utmost security and effectiveness.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section4" style="display: none;">
+        <div class="householdShifting">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Household Shifting <span>Service</span></h1>
+
+              <p>Interm Packers and Movers provide great and fast household shifting offerings. Interm Packers and Movers have experts that take care and assist you with all of your needs of shifting your household products. all of your precious goods are dealt with cautiously and they're packed in exact exceptional packing materials so that they may be transported safely. at the same time as packing your family items each item of family are packed with right packing material.
+              </p>
+
+              <p>Shifting your household stuff may be a tiresome job and it entails the transferring of all of the family items for instance electronic gadget, glass gadgets,almirahs, art work, tv, track players and microwave oven. This consists of your new stuff in addition to old.Relocation of your stuff may be both nearby or domestic. We contend with packing all your goods and offer secured garage and warehousing offerings and transport it to your favored locations in the course of the u . s .. Our experts paintings 365 X 24 X 7 toprovide you exquisite offerings. we've got a unique packing crew for packing the goods. they're professional and well skilled to % as well as flow your all household objects global door to door. the products are packed properly in remarkable pleasant packing cloth. This guarantees that your household stuff is included from any sort of damage. we are in regular touch with our customers all of the instances the goods are being transported. Our team member might accompany the vehicle till it reaches destination.We endow with entire domestic moving including family stuff and assets. Packing of every and every goods should be performed with greater care so that while transporting it to the new destination it does no longer get harm or get scratched.
+            </p>
+
+              <p>
+                Interm Packers and Movers skilled specialists cope with all of the treasured items and that they ensure that not even a single belonging of the client gets harm. They provide complete packing method to avoid from casualties and loss in fact protection of goods is our first and final preference. Interm Packers and Movers have all the modern-day era to load and sell off the products with utmost care in the car.in addition they arrange goods effectively in order that even as transporting them they are not broken whilst shifting it to new vacation spot. Interm Packers and Movers do recognize the fee of our client’s items and the bond of dating they had been sharing those long years.We offer the shifting offerings with whole pleasant guarantee for your preferred vacation spot, as in keeping with the requirement of consumer throughout India and distant places. We offerings offer you the safesthousehold shifting, and our services are provided at your doorsteps. we've got a properly- coordinated group of specialists and our crew paintings with clients to make certain that all their requirements are met. We specialise in family goods transferring. As we've well maintained fleet offerings it enables us in handing over the consignment on time to the brand new locations of our consumer.
+              </p>
+
+              <p>
+                Interm Packers and Movers offer its clients specialised offerings to relocate your household stuff securely as well as make the system very smooth for you so you are unfastened from all the anxiety of moving your stuff.
+              </p>
+             
+            </div>
+          </div>
+      </div>
+
+      <div id="Section5" style="display: none;">
+        <div class="relocationService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Relocation <span>Service</span></h1>
+
+              <p>Interm Packers and Movers Excel In supplying complete Relocation services…….
+                Every year almost heaps of humans shift from one region to some other because of certain reasons. shifting to different locations for brand spanking new and higher life is very thrilling but moving the entire work or house to other location is a tiresome process. as a consequence for you to save you the strain of this tiresome job, you want to hire a expert packers and movers business enterprise that may make your shifting effortless and easier. Interm Packers and Movers is a leading transferring organisation that hold remarkable information in presenting excellent and professional relocation services at inexpensive prices. We at Interm Packers and Movers are continually equipped to provide pre-eminent offerings for all styles of relocation conditions.
+              </p>
+
+              <p>Interm Packers and Movers, being leading relocation carrier carriers continually goal to provide reliable, speedy and expert packers and movers offerings at affordable costs. Our expert team comprising of skilled and expert exertions offer superb relocation services as each and every hard work in our team is educated in managing all of your belongings whether or not it's far non-public or commercial with splendid care and safety. The expertise, revel in in addition to marketplace understanding of our expert experts approximately each and each component commercial enterprise, when paired with robust and properly- constructed logistic help generates a facility which provides custom designed and modern relocation services.
+
+            </p>
+
+              <p>
+                Besides this, we take care of each and every relocation information starting from packing goods to loading of products to unloading of products to resettling of products to transporting electronic items to coverage coverage. We also provide you professional agents, professionally skilled & experience drivers and skilled packing as well as loading team. This ends in a secure transport of products in your new destination. We also make certain that we offer pleasant and trained packing crew for perfect packing of goods in order that items are averted from damage at some stage in the transportation process.
+                Aside from this, Interm Packers and Movers constantly attention in imparting shifting or relocation facility in a problem- unfastened manner. Given beneath is the manner which is blanketed in our relocation services-
+              </p>
+
+              <p>
+               
+Our crew carefully packs your household or office items and then creates a tick list for goods which might be required to be relocated.
+We move all your goods to new area with out allowing even a scratch at the cloth
+We also recommend proper coverage for goods so that during case of any unexpected instances, the loss may be reimbursed
+Unpacking of relocated items in order that rent hassles are encountere
+Rearranging of products for customers' delight
+Verifying items with the checklist for clarity and transparency within the dealing
+              </p>
+
+              <p>
+                So, through following this method we efficaciously provide brief, clean and reliable relocation services.
+              </p>
+             
+            </div>
+          </div>
+      </div>
+
+      <div id="Section6" style="display: none;">
+        <div class="cargoService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Cargo <span>Service</span></h1>
+
+              <p>Interm Packers and Movers are offering a huge collection of shipment offerings. Being the sea freight forwarder, we provide complete offerings at almost all seaport locations. As according to the requirement of the purchaser, we provide full box load provider and less-than-container load carrier with ease and international reach. we've an remarkable network with several ocean companies during the arena. Our skilled professionals additionally offer custom designed answers as per the consumer's requirement as a consequence heading off needless postpone
+              </p>
+
+              <p>Interm Packers and Movers is one of the few logistics organizations that provide rapid in addition to reliable cargo services in India. We offer terrific shipment services to people as well as agencies throughout the globe. Now, you may depart your worries of shifting your stuff from one area to the other as we provide cargo services that are rapid everywhere in the usa in addition to other locations around the globe. This has largely contributed to our recognition in this business. Interm Packers and Movers is amongst one of the most renowned and relied on cargo service providers for India in addition to locations which might be outside India.
+
+            </p>
+
+              <p>
+                The cargo carrier issuer provide its offerings by air shipment offerings, railway transportation services, sea cargo services, roadways shipment services as well as customs clearance offerings for various places throughout India in addition to other parts of the sector. other shipment services include port managing services, hiring services, consignment mobilizing offerings, warehousing services, cargo session offerings in addition to price introduced services.
+              </p>
+
+              <p>
+               
+                Interm Packers and Movers is a reputed and well-known corporation that supplies your stuff timely. We handle your items with a whole lot of care for the duration of the transportation process in addition to ensure a hassle-free clearance. this means for each exported in addition to imported goods on the customs airport at New Delhi, Kolkata, Cochin and Mumbai.
+              </p>
+
+              <p>
+                Interm Packers and Movers offers you first hand cargo offerings for places in India as well as other parts of the arena. it's miles characterized by using swiftness, reliability in addition to safety. Your items are safe with us and our contributors take utmost care to make certain that your articles do now not face any kind of harm throughout loading, unloading in addition to all through the entire transportation time.
+              </p>
+             
+              <p>
+                Interm Packers and Movers offer expedited air freight services and global air freight to destinations around the sector. Our services to be had at the numerous airports are desirable to all our clients with a excessive extent of business requiring time-vital shipping. We offer air freight offerings based totally in your needs and your schedule. We select the quality service that might fit your shipment. in addition to this, we are very cautious approximately sure factors for instance, considering the seasonal variations as well as the effect of the size or weight restrictions might help you in warding off any needless expenses or delay in shipping the freight everywhere across the globe.
+              </p>
+
+              <p>
+                Even though We offer a huge form of offerings, our energy is our personalized service. no longer best this, we take private interest in every cargo we handle.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section7" style="display: none;">
+        <div class="insuranceService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Insurance <span>Service</span></h1>
+
+              <p>Interm Packers and Movers is the simplest call that gives high-quality packing and moving carrier with insurance services.
+                In terms of packing as well as moving of goods, the simplest call that first strikes in our minds is Interm Packers and Movers. Interm Packers and Movers is one of the main packers and movers companies in India imparting numerous packing and transferring solutions within India in addition to throughout the globe.
+              </p>
+
+              <p>We at Interm Packers and Movers offer one of the greatest packing and moving services throughout the united states of america, with insurance offerings. given that surety of products is one of the maximum vital elements in packing and transferring industry, we let our clients heave a sigh of relief soon once they have exceeded over their goods to us for transferring everywhere on this global. In gift scenario, every purchaser desires to ensure that their items must be made to attain accurately on the vacation spot.
+
+            </p>
+
+              <p>
+                Interm Packers and Movers apprehend the seriousness of the damages even as the packing as well as in moving system. In shifting and packing industry, we are one of the maximum accountable service companies that adopt all of the problems relevant to coverage in order that their purchaser will no longer should worry about the paper stuffs.
+
+              <p>
+                An insurance service is need to while getting offerings from us. for the reason that with the aid of using satisfactory packing in addition to safe transportation, troubles beyond our manage together with fire, accidents, riots, sabotage and many others can bring about damages in your goods. So, consequently aside from transporting and packing we also provide insurance offerings. We apprehend the fee of every and every single ware of our clients, so we are virtually devoted closer to our paintings. consumer delight and accept as true with is pinnacle priority of our business enterprise, so we work very tough to never lose our client's trust.
+              </p>
+
+              <p>
+                <h5>Shipment Valuation alternatives</h5>
+                If any product or precise receives damaged or lacking while in the care of Interm Packers and Movers then the quantity of liability will get reimbursed. earlier than signing this valuation alternative, you have to be privy to all of the information as well as execs and cons of shipment valuation options people.
+              </p>
+             
+              <p>
+                <h5>Minimal cargo protection</h5>
+                Minimum cargo safety is one of the maximum cost effective valuation options wherein the client get the negligible danger coverage for the transport with out a additional fee. earlier than getting this selection you must have to recognize all of the elements in addition to aspects of insurance offerings
+              </p>
+
+              <p>
+                <h5>Full fee protection</h5>
+                Apart from minimal cargo safety, we at Interm Packers and Movers also offer complete cost safety insurance service on your goods. complete fee safety hazard insurance consists of the general cargo protection of your valuable items. beneath this agreement, if unfortunately your proper are misplaced, damage or destroyed the corporation might be fully responsible and offer you reliable solution.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section8" style="display: none;">
+        <div class="packingunpackingService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Packing Unpacking <span>Service</span></h1>
+
+              <p>Transferring from one area to every other is a totally bulky and tiresome process especially in case you are relocating altogether from one town to some other. Relocation itself is of two types, one wherein you shift your private home and different family materials and another is commercial relocation which includes workplace moving, corporate relocation, keep transferring, commercial enterprise relocation and industrial items shifting. each form of transferring could be very tedious and frequently makes people careworn and ultimately chaos prevailed. Interm Packers and Movers, you could effortlessly keep away from the chaos and pressure as they might without problems and efficaciously make your relocating a easy manner which appeared a far off proposition when you made a decision to relocate.
+              </p>
+
+              <p>Understanding the complexities and the care that have to be taken while one comes to a decision to transport from one area to every other, Interm Packers and Movers provide their packing unpacking services within the most highest quality of ways. We, at Interm Packers and Movers, provide each company in addition to residential relocation with none huff and puff. Our large variety of warehouse services help to store any range of goods in them. some other wonderful thing of ours is that we offer safe warehouse facilities and offerings to all foremost locations of India.
+            </p>
+
+              <p>
+                Moreover, their warehousing services is truly properly prepared with advanced centers that could assist in ensuring that the products that are loaded will stay the equal in the course of the adventure and at the time of dispatch because we value the accept as true with that you have proven in us and will in no way assist you to down. we can take all the pressure of packing and unpacking away from you and allow you to concentrate completely on arranging your new home or workplace in a strain loose manner. this is why clever guys have a tendency to provide responsibility of packing and moving to no person but professional packers and movers service providers like us with a view to have peace of thoughts while we contend with your packing and unpacking wishes.
+              <p>
+                The group of ours is so adept in packing and unpacking that you do no longer need to fear a unmarried bit approximately your relocation. they'll wrap your valuables and goods in high satisfactory substances inclusive of cartons, containers, tapes, wrapping sheets and papers to ensure that your items might stay in the equal nice because it become earlier than the packing. once the packed goods arrive at your vacation spot, our committed workforce and workers unpack the objects carefully and set up all of them as in step with your instructions and suggestions.
+              </p>
+
+              <p>
+                So, in case you are also taking into consideration relocating then do consider our offerings and supply us a risk to help you with our exceptional packing unpacking services.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section9" style="display: none;">
+        <div class="warehousingStorageService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Warehousing storage <span>Service</span></h1>
+
+              <p>Relocation to a different place is a very time consuming job and involves stressful and hectic schedule of packing and shifting the goods from one place to the other. Interm Packers and Movers offer our expert services for complete shifting process, right from packing, moving and settling down thereby saving your precious time and energy. In addition to this, we also have warehousing storage services.
+              </p>
+
+              <p>These days, the space in homes and offices is decreasing and on the other hand the prices of the real estate industry are shooting up. As a result, people are putting their stuff in warehouses and downsizing it. The main reason behind this could be insufficient space, reconstruction or renovating activity as well as due to security reasons. The stuff that cannot be accommodated or adjusted in smaller space or the goods that one does not require at the current time can now be safely stored at our warehouses with more security.
+            </p>
+
+              <p>
+                All these reasons have made the warehousing facility more important. Our warehousing facilities are excellent are specially designed to be flexible. Our warehouses can take care of storing a single pellet of small electronics to heavy industrial equipment that require thousands of square feet of space. We provide ideal solution for all your short-term storage needs. If you are planning to outgrow your warehouse as well as require some additional space, we have enough space to accommodate your stuff. We can provide you increased storage space as your requirements grow. You need to pay only for the warehousing as well as storage services.
+              <p>
+                Our warehousing and storage services offer you space to store office stuff such as furniture, computers and documents etc.; household stuff such as extra furniture, antiques, musical instrument, electronic equipment and innumerable stuff.
+              </p>
+
+              <p>
+                We offer our services to corporate commercial users and to individuals as well. Once your stuff reaches our warehouse, all the responsibility of your stuff is with us till the time your stuff is stored here.
+              </p>
+
+              <p>
+                The main features of our warehousing and storage facilities are delivery of your valuable goods as per needs, delivery and pick up timely as per the needs of customer, cost effective, easy and quick distribution of the products. We have experienced and skilled staff and we ensure round the clock security with advanced inventory management methods.
+              </p>
+
+              <p>
+                We also lay a lot of emphasis on taking good care of your stuff and to avoid any damage to your stuff we have adequate pest control measures. We also have special storage systems that are unique for every customer’s valuable goods. We even handle large inventories offering you complete solution to all your storage needs.
+              </p>
+
+              <p>
+                Either your move is within the city or long distance, we have experts with sound knowledge as well as good experience to manage and handle the situations. We serve our clients by taking off all their worries and burden of storing their stuff. At Interm Packers your stuff will be stored with utmost security and effectiveness.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section10" style="display: none;">
+        <div class="carCarriersMoversService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Car Carriers Movers <span>Service</span></h1>
+
+              <p>If you are planning to transport your automobile and you need to take into account the diverse automobile delivery alternatives then there are several opportunities which are to be had for you. in recent times, there are many on-line portals that offer the quality services, one being the automobile vendors Movers services at excellent rate. We provide the auto trailers for your automobile switch and additionally organize at every step the protection of your automobile, whether it is relocation or loading. An experienced and well installed mover like us assist you to inside the shifting of your car without adverse it and at the scheduled time. You do not have to fear about anything that is related to your automobile.
+              </p>
+
+              <p>The expert, main and well installed corporation like vehicle providers Movers services have to have the professional and experienced group of workers individuals. even as transferring or transferring your vehicle, the professional people of this company take the most care of your precious car and additionally save you them from harm, scratch; etc. transferring or transferring your treasured car from one area to the new location may be a completely traumatic and worrying mission however with the assist of this automobile transferring organization you could easily move or shift your vehicle. We take the help of the auto trailers that allows in presenting the car provider services all over the India.
+            </p>
+
+              <p>
+                Basically, the automobile is conveyed on the in particular designed trucks for the at ease carriage of your precious automobiles at the brand new destination. We, as the pleasant automobile moving organization, understand each need of our clients as we've got a extremely good knowledge and expertise in this subject. We offer the personalised and fee effective automobile providers Movers services which cope with their necessities definitely. We build every effort to provide the secure car carrier services to their clients. each and each member of this business enterprise ensures that every vehicle is nicely wrapped to shield it from scratches.
+              <p>
+                Amongst many corporations that vouch to provide the ability of vehicle moving, automobile carriers Movers offerings is clearly the great and most efficient. once you have landed here, there would be no need on the way to discover another company for availing automobile shifting offerings. We, as a self-reliant company, have professional drivers in addition to the quality automobile vendors that help in moving or transferring your motors from one region to a brand new destination. when you have any complaint associated with the services, every and every complaint is treated with super seriousness and is aspired to be corrected as quickly as it's miles viable. we've got virtually the high-quality body of workers members that are there for you usually, treating your vehicle as their very own and prized.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section11" style="display: none;">
+        <div class="Loading&UnloadingService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Loading & Unloading <span>Service</span></h1>
+
+              <p>Loading and unloading the goods is a volatile challenge and nay sort of mishandling of the products could bring about the lack of your treasured stuff. this is why humans prefer to rent Packers & Movers organizations to take care of the process. Interm Packers and Movers gives loading and unloading facility of the products and supply them to the new area correctly.
+              </p>
+
+              <p>proper care is taken that the products are positioned properly inside the automobiles even as moving manner to avoid any damage for your stuff in the course of the Loading and Unloading technique. Our loading includes secure heaping of the packed shipment into the provider with help of special slides. the primary intention behind that is to defend the objects towards any type of damage as well as dents. managing of the consignments for relocating inside the u . s . a . isn't always an easy mission; however we've got made it look quite clean with our understanding and top experience on this subject.
+            </p>
+
+              <p>
+                Treating your items with care has stronger our popularity in addition to compelled us to serve you better. delivering all of the packing and transferring services inside the most reliable manner is our uniqueness and we take all viable steps to perform that. We provide unrivaled quality when it comes to loading and unloading offerings.
+              <p>
+                The loading assignment is carried out with care and it offers security to the clients. We use gadgets like truck trailers, freight, carry tables, lifters, loading spouts and many others. to carry out the loading easily. We offer systematic and properly prepared Loading and Unloading services and comply with the desired parameters. we have properly skilled and skilled team of workers that load in addition to set up the goods with a number of care. while the goods attain the desired location, our workforce carefully unloads the stuff well as consistent with instructions. The whole procedure is achieved in a expert manner and this prevents remaining moment damages. We use the excellent viable system to dump the stuff. Conveyor docks, tilt tables, hydraulic elevators are some equipment that we utilize while unloading the objects.
+              </p>
+
+              <p>
+                Ensuring protection is our most important difficulty and we use the most appropriate manner out to yield the best consequences. For safety purposes and to save you damage, we ensure that the heavy stuff is unloaded first. This ensures reliable in addition to effective loading services throughout packing and moving. We offer value for money services as well as even provide customs clearance offerings. With a combined expert skills and revolutionary strategies we undertaking to reap complete customer satisfaction and offer first-class custom clearance services as well.
+              </p>
+
+              <p>
+                We offer a web platform in which you could get the list of the diagnosed and reputed packers & movers companies of your city or other towns along with metropolis profiles at Interm Packers and Movers services. you're required to fill the enquiry shape with a purpose to get the unfastened citation from the Packers & Movers agencies of all the fundamental cities in India like New Delhi, Chandigarh, Jaipur, Kolkata, Pune, Mumbai, Hyderabad, Chennai and Bangalore.
+              </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="Section12" style="display: none;">
+        <div class="transportService">
+            <div class="h-100 p-5 text-white bg-dark rounded-3">
+              <h1 class="sectionHeading">Transport <span>Service</span></h1>
+
+              <p>As it is a enterprise of shifting and Packing, transportation is the key thing that play splendid function in motion of products. So, we at Interm Packers and Movers are decided in presenting all our clients cheaper in addition to clean transportation offerings. We offer you manifold transportation services consisting of truckload, pool distribution, less-than-truckload plus home air offerings. We shift the products very swiftly with the goal that your valuable time isn't whacked. We guarantee straightforward transportation.
+              </p>
+
+              <p>Next are our unsettled capabilities through which at present we benefit the No.1 role amongst other relocation corporations in India.
+            </p>
+
+              <p>
+                <li>
+                    Smooth moving of products with out harming them in any possible manner.
+                </li>
+
+                <li>
+                    Smooth moving of products with out harming them in any possible manner.
+                </li>
+
+                <li>
+                    Paramount pleasant packing to permit safe and comfy shifting of all types of goods and materials.
+                </li>
+                <li>
+                    Short transferring of the goods to shop some time.
+                </li>
+                <li>
+                    Devoted manpower with familiarity of latest strategiesSound costs that can fit your pockets.
+                </li>
+                <span>Protection warranty</span>
+                <li><span>24 X 7</span> satisfied facility to craft you very pleased.</li>
+                We useful resource smooth in conjunction with fast transport services and to create your goods transportation aggravates loose, we handiest use right great motors which are enabled with advance protection features. All Our means of transports are of an unsurpassed first-rate thru which you can without difficulty get your goods shifted very quickly. We employ a top notch fleet of delivery in order that the complete system of moving takes location with none hassles. We pay correct interest to the goods while transportation so that they are not smashed or even scratched and arrive on the vacation spot in sound and safe situations. We are not restricted with transportation however additionally we do take care of your transported items in unloading and loading.
+                quality Transportation facilities of all-
+                Interm Packers and Movers delivery services are to be had in all important components of the usa or even far flung the usa. From us, you could get excellent transportation services everywhere at any time you need. We recognition on the transportation offerings in order that they reach to the desired vacation spot quick and easily. we're main packers and movers in India and concentrate on imparting professional transportation offerings. All our customers are really satisfied with our moving offerings and the list of thrilled customers is limitless.
+                
+              <p>
+                A professional style of transportation…..
+                At Interm Packers and Movers, you may get qualified delivery offerings from us. Our experts will do everything methodically, loading, packing, unpacking and transportation too. we can take intense take care of your goods at some stage in transportation. With us you can get your goods progressed in maximum trouble-unfastened, appropriate, speedy in addition to price-effective manner. So simply name us and be pleased with associated with us. With us you may certainly see your goods moved without difficulty and quick.
+              </p>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-white" style="background-color: #ff5d1b;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img class="logoImg" src="imagebox/logo-interm.png" alt="">
+            <h2 class="text-uppercase fw-bold mb-4 text-dark fs-3">
+             Interm Packers and Movers
+            </h2>
+            <p class="fs-4">
+              We are honored to be a leading and reliable partner in the field of multimodal transport in India.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div> -->
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div> -->
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 fs-1">Head Office Address</h6>
+            <p><i class="fas fa-home me-3"></i> 216, SJR Equinox Apartment Rd, Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              info@intermmovers.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +91-8884440131</p>
+            <p><i class="fas fa-print me-3"></i> +91-8884440232
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2010 Copyright: Interm Packers and Movers.
+      <a class="text-reset fw-bold" href="">IntermPackers&Movers</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+    <script src="js files/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        var divs = ["Section1", "Section2", "Section3", "Section4", "Section5", "Section6", "Section7", "Section8", "Section9", "Section10", "Section11", "Section12"];
+        var visibleId = null;
+        function show(id) {
+          if(visibleId !== id) {
+            visibleId = id;
+          } 
+          hide();
+        }
+        function hide() {
+          var div, i, id;
+          for(i = 0; i < divs.length; i++) {
+            id = divs[i];
+            div = document.getElementById(id);
+            if(visibleId === id) {
+              div.style.display = "block";
+            } else {
+              div.style.display = "none";
+            }
+          }
+        } ;
+
+        let links = document.querySelectorAll('.navLink');
+for(let i=0; i<links.length; i++){
+  links[i].addEventListener('click', function() {
+    for(let j=0; j<links.length; j++)
+      links[j].classList.remove('active');
+    this.classList.add('active');
+  });
+}
+
+        // $('.nav a').click(function(){
+        // $(this).addClass("active").removeClass("active"); });
+     </script>
+</body>
+</html>

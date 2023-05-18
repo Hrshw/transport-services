@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css files/style.css">
+  <link rel="stylesheet" href="css files/bootstrap-mod.css">
+  <!-- jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css files/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>IntermMovers</title>
+</head>
+
+<body>
+  <div class="header row-cols-md-1 position-relative">
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light position-absolute">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="logoImg" src="imagebox/logo-interm.png" alt=""></a>
+          <button class="navbar-toggler text-white collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler"><i class="fa-solid fa-grip-lines text-dark"></i></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown" >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Company</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Our Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="clients.html">Our Clients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="enquiryform.html">Online Enquiry Form</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="6000">
+          <img src="imagebox/poster-1.jpg" class="d-block w-100" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="animate__animated animate__backInLeft slidTextFirst">TYPES OF <br>TRANSPORT</h5>
+            <div class="serv">
+              <li class="animate__animated animate__backInDown animate__delay-1s">OCEAN FRIEGHT</li>
+              <li class="animate__animated animate__backInRight animate__delay-2s">LAND FRIEGHT</li>
+              <li class="animate__animated animate__backInUp animate__delay-.2s">AIR FRIEGHT</li>
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item" data-bs-interval="6000">
+          <img src="imagebox/poster-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="slidTextSecond animate__animated animate__backInDown">OUR SERVICES</h5>
+            <div class="servTwo d-flex">
+              <li class="animate__animated animate__tada">WARE HOUSING</li>
+              <li class="animate__animated animate__wobble animate__delay-1s">STORAGE SOLUTIONS</li>
+              <li class="animate__animated animate__jello animate__delay-2s">FRIEGHT FORWARDING</li>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="imagebox/poster-3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="slidTextThird">WE TRANSPORT</h5>
+            <p class="slidTextThird-p">ANYTHING</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+   
+    
+  </div>
+
+  <div class="cards row position-absolute start-50 translate-middle bg-dark w-50 text-white text-center">
+    <form>
+      <h1 class="mb-5 mt-3">GET QUOTE</h1>
+      <div class="breakLine"></div>
+      <div class="mb-5">
+        <!-- <label for="exampleInputName" class="form-label">Name</label> -->
+        <input type="Name" class="form-control w-50 m-auto" id="exampleInputName" placeholder="Enter Name">
+      </div>
+      <div class="mb-5">
+        <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+        <input type="email" class="form-control w-50 m-auto" id="exampleInputEmail1" aria-describedby="emailHelp"
+          placeholder="Enter Email">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <section id="team" class="cardsSection">
+    <div class="container">
+      <div class="row">
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="imagebox/1.jpg" alt="card image"></p>
+                    <h4 class="card-title">Why choose Interm Packers and Movers ?</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <p class="card-text">At Interm Packers and Movers, we know time is of the essence. We have used our
+                      legacy Truckload service in the Mid-Atlantic and Midwest regions to shape what our company is
+                      today.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member -->
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="imagebox/2.jpg" alt="card image"></p>
+                    <h4 class="card-title">Are you optimising your warehouse space ?</h4>
+                    <!-- <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> -->
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+                    <p class="card-text">Warehousing, Storage and 3PL services offered by the Interm Packers and Movers
+                      have become an integral part of our client’s requirements. As our clients continued to demand
+                      increased savings and efficiencies in their businesses.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member -->
+        <!-- Team member -->
+        <div class="col-xs-12 col-sm-12 col-md-4">
+          <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+              <div class="frontside">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p><img class=" img-fluid" src="imagebox/3.jpg" alt="card image"></p>
+                    <h4 class="card-title">The gallery of Interm Packers and Movers </h4>
+                  </div>
+                </div>
+              </div>
+              <div class="backside">
+                <div class="card">
+                  <div class="card-body text-center mt-4">
+
+                    <p class="card-text">Some images highlighting our warehouse, transport, Cargo and logistics
+                      expertise.</p>
+                      <a href="gallery.html" class="btn btn-sm text-white-50">Show gallery</i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ./Team member -->
+      </div>
+    </div>
+  </section>
+
+  <section class="ourServices">
+    <div class="bg-image">
+      <img src="imagebox/poster-1.jpg" class="w-100" style="height: 400px;" alt="Louvre Museum" />
+      <div class="mask" style="background-color: hsla(0, 0%, 0%, 0.6)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <h3 class="mb-0" style="color: #ff5d1b; font-size: 4rem;">Our Services</h3>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <div class="album py-5 bg-body-tertiary position-relative" style="bottom: 100px;">
+      <div class="container serviceContainer">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <i class="fa-solid fa-box-open card-icon"></i>
+              <div class="card-body">
+                <h1>Packers and Movers <span>Service</span></h1>
+                <p class="card-text">We make packing and moving less difficult for you with our pleasant services and team of workers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <i class="fa-sharp fa-solid fa-repeat card-icon"></i>
+              <div class="card-body">
+                <h1>Relocation <span>Service</span></h1>
+                <p class="card-text">Interm Packers and Movers Excel In supplying complete Relocation services…….
+                  Every year almost heaps of humans shift from one region to some other because of certain reasons.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <i class="fa-solid fa-house-crack card-icon"></i>
+              <div class="card-body">
+                <h1>Insurance <span>Service</span></h1>
+                <p class="card-text">Interm Packers and Movers is the simplest call that gives high-quality packing and moving carrier with insurance services.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <i class="fa-solid fa-warehouse card-icon"></i>
+              <div class="card-body">
+                <h1>Warehousing storage <span>Service</span></h1>
+                <p class="card-text">Relocation to a different place is a very time consuming job and involves stressful and hectic schedule of packing and shifting the goods from one place to the other.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <i class="fa-solid fa-car-rear card-icon"></i>
+              <div class="card-body">
+                <h1>Car Carriers Movers <span>Service</span></h1>
+                <p class="card-text">If you are planning to transport your automobile and you need to take into account the diverse automobile delivery alternatives then there are several opportunities which are to be had for you.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <i class="fa-solid fa-truck-ramp-box card-icon"></i>
+              <div class="card-body">
+                <h1>Loading & Unloading <span>Service</span></h1>
+                <p class="card-text">Loading and unloading the goods is a volatile challenge and nay sort of mishandling of the products could bring about the lack of your treasured stuff.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers">
+    <div class="container" id="whatWeOffer">
+      <h2 class="pb-2 border-bottom">What we <span>Offers</span></h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <i class="fa-solid fa-box card-icon fa-bounce"></i>
+          </div>
+          <div>
+            <h2>Packers and Movers Service</h2>
+            <p>Now you do not have to worry about shifting your stuff while you relocate. Packing and moving services are offered by Interm Packers and Movers.</p>
+            
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <i class="fa-solid fa-truck-fast fa-fade card-icon"></i>
+          </div>
+          <div>
+            <h2>Domestic & International</h2>
+            <p>Interm Packers and Movers area well-known logistics service provider for packing and shifting of household stuff, office furniture and equipment.</p>
+            
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <i class="fa-solid fa-database card-icon fa-beat"></i>
+          </div>
+          <div>
+            <h2>Warehousing and storage</h2>
+            <p>Relocation to a different place is a very time consuming job and involves stressful and hectic schedule of packing and shifting the goods from one place.</p>
+            
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <i class="fa-solid fa-arrows-left-right fa-flip card-icon"></i>
+          </div>
+          <div>
+            <h2>Household Shifting Service</h2>
+            <p>Interm Packers and Movers provide great and swift household shifting services. Interm Packers and Movers have experts that take care and assist.</p>
+            
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <i class="fa-solid fa-plane card-icon fa-bounce"></i>
+          </div>
+          <div>
+            <h2>Packing Unpacking Service</h2>
+            <p>Interm Packers and Movers offer a huge range of warehousing services. We provide you safe warehousing services and facilities at several major locations.</p>
+            
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <i class="fa-solid fa-globe fa-flip card-icon"></i>
+          </div>
+          <div>
+            <h2>Car Carriers Movers</h2>
+            <p>Interm Packers and Movers take additional care when you choose us for our car carrier services. We realize that your vehicle is special for you.</p>
+            
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    
+      <div class="row w-50 m-auto bg-dark text-white rounded-9 justify-content-center text-center">
+  
+        <div class="number d-lg-flex gap-5">
+                    
+          <div class="value-wrap">
+         <div class="value display-3">120</div>
+ <h4>Office worldwide</h4>
+</div>
+
+          <div class="value-wrap">
+ <div class="value display-3" >214</div>
+     <h4>Hardworking people</h4>
+</div>
+    <div class="value-wrap">
+ <div class="value display-3">15</div>
+ <h4>Countries coverd</h4>
+</div>
+</div>
+  </div>
+    <h1 class="mb-5 m-5">What clients <span class="display-3 text-danger">say</span>.</h1>
+    <!-- Carousel wrapper -->
+<div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+  <!-- Controls -->
+  <div class="d-flex justify-content-center mb-4">
+    <button class="carousel-control-prev position-relative" type="button"
+      data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next position-relative" type="button"
+      data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Inner -->
+  <div class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="mb-3">Simran Khurana</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Thank you for delivering the chairs to us so quickly. Your delivery guys were most helpful and courteous. You have been a pleasure to deal with and we will not hesitate to use your services again or recommend you.                     
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <h5 class="mb-3">SS Choudhary</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              
+              We have always found them to be highly professional and reliable, and have assisted us in delivering a high standard service to our customers. Interm Packers and Movers have been a valuable supplier to Truflo and continue to be so.
+                                    
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <h5 class="mb-3">Neelam Malik</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              
+              We are very happy with service. The dispatchers are professional and responsive. There are no obstacles, and Lance has been a good problem solver for us, like when we had a tough time finding containers for overseas deliveries.
+                                    
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="mb-3">Jai </h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              In a commodity business like trucking, GW really stands out because of its customer service. They come out to discuss our needs, give us fast and accurate quotes, and get me a truck when they say they will. That makes it a relationship.
+          
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <h5 class="mb-3">Alex Rey</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+             
+              I recently had my goods shifted from Agra to Chennai by hiring Interm Packers and Movers and it was the best decision I made. The staffs were highly trained and dedicated towards their job. 
+                                    
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm"></i>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <h5 class="mb-3">Dhruv Misra, Bangalore</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Thanks Interm Packers and Movers, as I delighted after receiving my car within proposed time limit from Ghaziabad to Hyderabad in same state.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="far fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single item -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5 class="mb-3">Anna Deynah</h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              I recently had my goods shifted from Agra to Chennai by hiring Interm Packers and Movers and it was the best decision I made. The staffs were highly trained and dedicated towards their job. 
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <h5 class="mb-3">naveen </h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Interm Packers and Movers is great to work with. They have many locations, competitive rates, and their staff is excellent will go above and beyond for their partners. I look forward to working with them in the future. Thank you!
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <h5 class="mb-3">tanaya </h5>
+            <p class="text-muted">
+              <i class="fas fa-quote-left pe-2"></i>
+              Thank you for your help in moving our goods. Your team was professional and efficient throughout the process. We appreciate your hard work and dedication to ensuring our items arrived safely and on time.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+              <li><i class="fas fa-star fa-sm"></i></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Inner -->
+</div>
+<!-- Carousel wrapper -->
+  </section>
+
+  <!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #ff5d1b;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <img class="logoImg" src="imagebox/logo-interm.png" alt="">
+          <h2 class="text-uppercase fw-bold mb-4 text-dark fs-3">
+           Interm Packers and Movers
+          </h2>
+          <p class="fs-4">
+            We are honored to be a leading and reliable partner in the field of multimodal transport in India.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div> -->
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 fs-1">Head Office Address</h6>
+          <p><i class="fas fa-home me-3"></i> 216, SJR Equinox Apartment Rd, Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@intermmovers.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +91-8884440131</p>
+          <p><i class="fas fa-print me-3"></i> +91-8884440232
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2010 Copyright: Interm Packers and Movers.
+    <a class="text-reset fw-bold" href="">IntermPackers&Movers</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+
+<script>
+$(window).scroll(testScroll);
+var viewed = false;
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+function testScroll() {
+  if (isScrolledIntoView($(".number")) && !viewed) {
+      viewed = true;
+      $('.value').each(function () {
+      $(this).prop('Counter',0).animate({
+          Counter: $(this).text()
+      }, {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+              $(this).text(Math.ceil(now));
+          }
+      });
+    });
+  }
+}
+</script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script> -->
+
+    <script src="js files/bootstrap.bundle.min.js"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>
