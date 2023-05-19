@@ -18,6 +18,7 @@ The website is developed using the following technologies:
 - CSS: Styling and visual presentation of the website.
 - JavaScript: Enhancing interactivity and functionality.
 - Bootstrap: Framework for responsive design and pre-built components.
+- PHP: Handling form data.
 
 ## Deployment
 
