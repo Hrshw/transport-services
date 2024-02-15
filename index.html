@@ -598,15 +598,52 @@
               <li><i class="fas fa-star fa-sm"></i></li>
             </ul>
           </div>
+          
 
         </div>
       </div>
     </div>
   </div>
+  
   <!-- Inner -->
 </div>
+
 <!-- Carousel wrapper -->
   </section>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <h5 class="mb-3">Submit Your Feedback</h5>
+            <form id="feedbackForm" method="post" action="process_feedback.php">
+                <div class="mb-3">
+                    <label for="userName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="userName" name="userName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="userFeedback" class="form-label">Your Feedback</label>
+                    <textarea class="form-control" id="userFeedback" name="userFeedback" rows="4" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="starRating" class="form-label">Star Rating</label>
+                    <div class="rating">
+                        <input type="radio" id="star5" name="starRating" value="5" required>
+                        <label for="star5">&#9733;</label>
+                        <input type="radio" id="star4" name="starRating" value="4">
+                        <label for="star4">&#9733;</label>
+                        <input type="radio" id="star3" name="starRating" value="3">
+                        <label for="star3">&#9733;</label>
+                        <input type="radio" id="star2" name="starRating" value="2">
+                        <label for="star2">&#9733;</label>
+                        <input type="radio" id="star1" name="starRating" value="1">
+                        <label for="star1">&#9733;</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 
   <!-- Footer -->
 <footer class="text-center text-lg-start text-white" style="background-color: #ff5d1b;">
