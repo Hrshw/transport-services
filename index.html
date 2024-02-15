@@ -131,27 +131,28 @@
   </div>
 
   <div class="cards row position-absolute start-50 translate-middle bg-dark text-white text-center">
-    <form class="w-100">
-        <h1 class="mb-5 mt-3">GET QUOTE</h1>
-        <div class="breakLine"></div>
-        <div class="mb-3">
-            <input type="text" class="form-control" id="FullName" placeholder="Full Name*" required>
-        </div>
-        <div class="mb-3">
-            <input type="tel" class="form-control" id="phone" placeholder="Mobile No*" required>
-        </div>
-        <div class="mb-3">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter Email" required>
-        </div>
-        <div class="mb-3">
-            <input type="text" class="form-control" id="location-from" placeholder="Location From*" required>
-        </div>
-        <div class="mb-3">
-            <input type="text" class="form-control" id="location-to" placeholder="Location To*" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <form class="w-100" method="post" action="http://localhost:3000/php/sendEmail.php">
+      <h1 class="mb-5 mt-3">GET QUOTE</h1>
+      <div class="breakLine"></div>
+      <div class="mb-3">
+          <input type="text" class="form-control" name="name" placeholder="Full Name*" required>
+      </div>
+      <div class="mb-3">
+          <input type="tel" class="form-control" name="phone" placeholder="Mobile No*" required>
+      </div>
+      <div class="mb-3">
+          <input type="email" class="form-control" name="email" aria-describedby="emailHelp"
+              placeholder="Enter Email" required>
+      </div>
+      <div class="mb-3">
+          <input type="text" class="form-control" name="location_from" placeholder="Location From*" required>
+      </div>
+      <div class="mb-3">
+          <input type="text" class="form-control" name="location_to" placeholder="Location To*" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
 </div>
 
 
@@ -728,8 +729,8 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2010 Copyright: sunrise Packers and Movers.
-    <a class="text-reset fw-bold" href="">SunrisePackers&Movers</a>
+    © 2010 Copyright: SiyaRam Packers and Movers.
+    <a class="text-reset fw-bold" href="">SiyaRamPackers&Mover's</a>
   </div>
   <!-- Copyright -->
 </footer>

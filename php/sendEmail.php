@@ -11,38 +11,49 @@ function url(){
   );
 }
 
-if($_POST) {
+ob_start(); // Start output buffering
 
-   $name = trim(stripslashes($_POST['name']));
-   $email = trim(stripslashes($_POST['email']));
-   $subject = trim(stripslashes($_POST['subject']));
-   $contact_message = trim(stripslashes($_POST['message']));
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-   
-	if ($subject == '') { $subject = "Contact Form Submission"; }
+    $name = trim(stripslashes($_POST['name']));
+    $phone = trim(stripslashes($_POST['phone']));
+    $email = trim(stripslashes($_POST['email']));
+    $location_from = trim(stripslashes($_POST['location_from']));
+    $location_to = trim(stripslashes($_POST['location_to']));
 
-   // Set Message
-   $message .= "Email from: " . $name . "<br />";
-	 $message .= "Email address: " . $email . "<br />";
-   $message .= "Message: <br />";
-   $message .= nl2br($contact_message);
-   $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " contact form. <br />";
+    // Set Subject
+    $subject = "Quote Request - $name";
 
-   // Set From: header
-   $from =  $name . " <" . $email . ">";
+    // Set Message
+    $message = "Name: $name <br />";
+    $message .= "Phone: $phone <br />";
+    $message .= "Email: $email <br />";
+    $message .= "Location From: $location_from <br />";
+    $message .= "Location To: $location_to <br />";
+    $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " contact form. <br />";
 
-   // Email Headers
-	$headers = "From: " . $from . "\r\n";
-	$headers .= "Reply-To: ". $email . "\r\n";
- 	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+    // Set From: header
+    $from = "$name <$email>";
 
-   ini_set("sendmail_from", $to); // for windows server
-   $mail = mail($to, $subject, $message, $headers);
+    // Email Headers
+    $headers = "From: $from\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-	if ($mail) { echo "OK"; }
-   else { echo "Something went wrong. Please try again."; }
+    ini_set("sendmail_from", $to); // for windows server
+    $mail = mail($to, $subject, $message, $headers);
 
+    if ($mail) {
+        echo "OK";
+    } else {
+        echo "Something went wrong. Please try again.";
+    }
+} else {
+    // If the form is not submitted through POST method, redirect to the form page.
+    header("Location: index.html");
+    exit();
 }
 
+ob_end_flush(); // End output buffering and flush the output
 ?>
